@@ -27,12 +27,6 @@ variables:
   # Agent VM image name
   pool:
    TestPipeline
-
-- task: Docker@2
-  inputs:
-    containerRegistry: 'myegistr1y'
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'  
     
 stages:
 - stage: Build
